@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<nav class="navbar navbar-light bg-light fixed-top">
+  <i class="fab fa-buromobelexperte"> Memory game</i>
+</nav>
+
+<div class="bg-img">
+  <form action="/" method="post">
+    <div class="center-container">
+      <h1>Memory game</h1>
+
+      <label for="name"><b>Your name</b></label>
+      <input type="text" placeholder="Enter player's name" name="name" id="name" required>
+
+      
+      <div class="form-row align-items-center">
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="height">Height: </label>
+          <input type="number" name="height" id="height" min="1" max="8">
+        </div>
+        <div class="col-auto my-1">
+          <label class="mr-sm-2" for="width">Width: </label>
+          <input type="number" name="width" id="width" min="2" max="8" step="2">
+        </div>
+      </div>
+      
+      <div class="form-row align-items-center">
+        <button type="submit" class="btn">Start game</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+{% endblock %}

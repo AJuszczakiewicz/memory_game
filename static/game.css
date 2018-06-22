@@ -1,0 +1,55 @@
+* {
+    margin:0;
+}
+
+
+#outer{
+  background-image: url("another_dimension.jpeg");
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height:920px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.centered {
+  background-color:rgba(250,250,250,0.7);
+  width:80px;
+  height:80px;
+  margin:10px;
+  text-align: center;
+  font-size: 3em;
+  border: solid 2px #AC5C07;
+}
+
+.icon{
+    padding-top: 15px;
+    color:#673604;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar h2 {
+    float: left;
+    display: block;
+    color: #AC5C07;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+.back {
+    color: #8D5009;
+}
+
